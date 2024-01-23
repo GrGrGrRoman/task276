@@ -66,8 +66,8 @@ class AccountController extends Controller
         else
             {
                 $this->model->accountAdd($_POST);
+                $_SESSION['loginInput'] = $_POST['login'];
                 $_SESSION['success'][] = 'Вы успешно зарегистрированы';
-                $_COOKIE['success'][] = 'Вы успешно зарегистрированы';
                 $this->view->redirect('login');
             }        
         }
