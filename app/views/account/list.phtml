@@ -1,0 +1,23 @@
+<p><h2 class="text-center"><?=$title;?></h2></p>
+
+<div class="container col-6">
+    <div class="row mb-2">
+
+        <?php if (empty($list)) : ?>
+            <p>Список пользователей пуст</p>
+        <?php else : ?>
+            <table class="table">
+                <tr>
+                    <th>Email</th>
+                    <th>Логин</th>
+                </tr>
+            <?php foreach ($list as $val) : ?>
+                <tr>
+                    <td><?php echo htmlspecialchars($val['email'], ENT_QUOTES); ?></td>
+                    <td><?php echo htmlspecialchars($val['login'], ENT_QUOTES); ?></td>
+                </tr>
+            <?php endforeach; ?>
+            </table>
+        <?php endif; ?>
+    </div>
+</div>
