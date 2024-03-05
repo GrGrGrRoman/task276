@@ -19,4 +19,4 @@ define('GOOGLE_CLIENT_ID', '203003412348-5dvsukeo88jhi899k7lukaaaqs2vo615.apps.g
 define('GOOGLE_CLIENT_SECRET', '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');
 
 //ВНИМАНИЕ! укажите порт вашего тестового web-сервера, ex. localhost:8000
-define('GOOGLE_REDIRECT_URL', 'http://localhost:8008/register_google/');
+define('GOOGLE_REDIRECT_URL', 'http://localhost:8000/register_google/');
